@@ -9,7 +9,7 @@ public class B01 {
         System.out.println("Nhập số phần tử của mảng: ");
         int size = scanner.nextInt();
         if (size <= 0 || size > 20) {
-            System.out.println("Số lượng phần tử khum hợp lệ");
+            System.out.println("Số lượng phần tử không hợp lệ");
             return;
         }
         int[] arr = new int[size];
@@ -19,9 +19,9 @@ public class B01 {
             arr[i] = scanner.nextInt();
         }
 
-        System.out.println("mảng trước khi đảo ngược: " + Arrays.toString(arr));
+        System.out.println("Mảng trước khi đảo ngược: " + Arrays.toString(arr));
         reverse(arr);
-        System.out.println("ma3ngs au khi đảo chiều: " + Arrays.toString(arr));
+        System.out.println("Mảng sau khi đảo chiều: " + Arrays.toString(arr));
     }
 
     public static void reverse(int[] arr) {

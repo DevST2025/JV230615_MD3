@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class B03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhập vào độ dài mảng: ");
+        System.out.print("Nhập vào độ dài mảng: ");
         int length = scanner.nextInt();
         if (length <= 0 || length >= 20) {
-            System.out.println("Số lượng phần tử khum hợp lệ.");
+            System.out.println("Số lượng phần tử không hợp lệ.");
             return;
         }
         int[] arr = new int[length];

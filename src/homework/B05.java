@@ -8,7 +8,7 @@ public class B05 {
         System.out.println("Nhập số phần tử của mảng: ");
         int size = scanner.nextInt();
         if (size <= 0 || size > 20) {
-            System.out.println("Số lượng phần tử khum hợp lệ");
+            System.out.println("Số lượng phần tử không hợp lệ");
             return;
         }
         int[] arr = new int[size];
