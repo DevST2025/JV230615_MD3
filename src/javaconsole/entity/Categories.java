@@ -107,7 +107,7 @@ public class Categories {
         do {
             this.catalogName = sc.nextLine();
             //Trường hợp người dùng không nhập gì cả thì giữ nguyên tên cũ
-            if (this.catalogName == "") {
+            if (this.catalogName.isEmpty()) {
                 this.catalogName = oldName;
             }
             if (this.catalogName.length() <= 50) {

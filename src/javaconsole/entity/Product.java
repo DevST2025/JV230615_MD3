@@ -8,6 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Product {
+
     SimpleDateFormat dateFormat = new SimpleDateFormat("dd/mm/yyyy");
     private Date date = null;
     private String productId;
@@ -229,7 +230,7 @@ public class Product {
         do {
             this.productName = sc.nextLine();
             //Trường hợp người dùng không nhập gì cả thì giữ nguyên tên cũ
-            if (this.productName == "") {
+            if (this.productName.isEmpty()) {
                 this.productName = oldName;
             }
             if (this.productName.length() >= 10 && this.productName.length() <= 50) {
